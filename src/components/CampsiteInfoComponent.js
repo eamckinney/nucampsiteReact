@@ -1,14 +1,9 @@
 import React, { Component } from 'react';
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 
+// Presentational Component
 
 class CampsiteInfo extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            
-        };
-    }
 
     renderCampsite(campsite) {
         return(
@@ -51,14 +46,16 @@ class CampsiteInfo extends Component {
     render() {
         if (this.props.campsite) {
             return(
-                <div className='row'>
-                    {this.renderCampsite(this.props.campsite)}
-                    {this.renderComments(this.props.campsite.comments)}
-                </div>        
+                <div className="container">
+                    <div className='row'>
+                        {this.renderCampsite(this.props.campsite)}
+                        {this.renderComments(this.props.campsite.comments)}
+                    </div>     
+                </div>   
             );
         } else {
             return(
-                <div></div>
+                <div />
             );
         }
         
