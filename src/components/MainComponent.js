@@ -4,7 +4,7 @@ import Directory from './DirectoryComponent';
 import CampsiteInfo from './CampsiteInfoComponent';
 import { CAMPSITES } from '../shared/campsites';
 
-// Presentational Component?
+// Container Component? Also adding navbar?
 
 class Main extends Component {
     constructor(props) {
